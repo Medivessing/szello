@@ -87,79 +87,11 @@ section {
   stroke: #c2b280;
 }
 
-@media (min-width: 600px) {
-  .navbar {
-    flex-direction: row;
-    max-width: 40rem;
-    left: 6rem;
-    top: 2rem;
-    border-radius: 1rem;
-    align-items: center;
-    padding-left: 0;
-    height: 5rem !important;
-  }
-  .mobile-menu-container {
-    display: flex;
-    flex-direction: row;
-    max-height: none !important;
-    padding: 0 !important;
-    margin: 0;
-    height: 100%;
-  }
-  .navbar-item {
-    display: flex;
-    padding: 0 1.2rem;
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    width: auto;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  /* .active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: 120%;
-    background: #c2b280;
-    border-radius: 1rem;
-    color: white;
-  } */
-
-  .navbar-item.active {
-    width: auto;
-    height: 110%; 
-    background: #c2b280;
-    border-radius: 1rem;
-    color: white;
-    padding-left: 1.2rem;
-  }
-
-  .navbar-item:hover,
-  .navbar-item:active {
-    color: #c2b280;
-    transition: color 0.2s ease;
-  }
-  .active:hover,
-  .active:active {
-    color: white;
-    transition: color 0.2s ease;
-  }
-  .navbar svg {
-    display: none;
-  }
-}
-
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    #002147,
-    #001835
-  ); /* Navy blue gradient */
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #002147, #001835);
   font-family: "DM Serif display";
   font-size: 2.5rem;
   color: #ffffff;
@@ -170,67 +102,71 @@ section {
 
 .main-name {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-top: 10rem;
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  padding: 2rem 6rem 0px 0px;
   align-items: center;
   justify-content: center;
 }
 
 .kozmetika {
   font-size: 2.75rem;
-  color: #c2b280; /* Gold/Beige accent */
+  color: #c2b280;
 }
 
 .hero-items {
   position: relative;
   top: 4rem;
-  padding: 6rem 6rem;
+  padding: 0 6rem;
   display: flex;
+  flex-direction: column;
   color: #ffffff;
   justify-content: space-between;
+  align-items: center;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+.description {
+  padding-bottom: 1rem;
 }
 
 .secondary-description {
   font-size: 1.5rem;
   width: 70%;
-  text-align: center;
-  color: #f5f5f5; /* Light gray for better readability */
+  color: #f5f5f5;
 }
 
 .right {
   display: flex;
-  padding-right: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
 .right-items {
   display: flex;
   flex-direction: column;
   font-size: 1.75rem;
-  background: rgba(245, 245, 245, 0.95); /* Light gray with transparency */
+  background: rgba(245, 245, 245, 0.95);
   padding: 30px;
-  color: #002147; /* Navy blue text */
+  color: #002147;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(194, 178, 128, 0.3); /* Subtle gold border */
+  border: 1px solid rgba(194, 178, 128, 0.3);
 }
 
 .right h3 {
   padding-bottom: 1rem;
-  color: #002147; /* Navy blue heading */
-  border-bottom: 2px solid #c2b280; /* Gold underline */
+  color: #002147;
+  border-bottom: 2px solid #c2b280;
   margin-bottom: 1rem;
 }
 
@@ -242,13 +178,11 @@ section {
 .right-items li {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #002147; /* Navy blue text */
+  color: #002147;
 }
 
 .wave-container {
   width: 120%;
-  position: relative;
-  bottom: 225px;
 }
 
 .wave {
@@ -276,4 +210,101 @@ section {
 .services {
   background-color: white;
   min-height: 100vh;
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    max-width: 40rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    padding-left: 0;
+    height: 5rem !important;
+  }
+  .mobile-menu-container {
+    display: flex;
+    flex-direction: row;
+    max-height: none !important;
+    padding: 0 !important;
+    margin: 0;
+    height: 100%;
+  }
+  .navbar-item {
+    display: flex;
+    padding: 0 1.2rem;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-item.active {
+    width: auto;
+    height: 105%;
+    background: #c2b280;
+    border-radius: 1rem;
+    color: white;
+    padding-left: 1.2rem;
+  }
+
+  .navbar-item:hover,
+  .navbar-item:active {
+    color: #c2b280;
+    transition: color 0.2s ease;
+  }
+  .active:hover,
+  .active:active {
+    color: white;
+    transition: color 0.2s ease;
+  }
+  .navbar svg {
+    display: none;
+  }
+
+  .main-name {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    transform: translateX(0);
+    left: 6rem;
+    top: 2rem;
+  }
+
+  .main-name {
+    justify-content: end;
+    margin-top: 0;
+  }
+
+  .hero-section {
+    height: 100vh;
+  }
+
+  .hero-items {
+    padding: 6rem;
+  }
+  .name {
+    padding: 2rem 6rem 0px 0px;
+  }
+
+  .hero-items {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .right {
+    padding-top: 0rem;
+    padding-right: 4rem;
+  }
+  .wave-container {
+    position: relative;
+    bottom: 175px;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSections = () => {
   return (
-    <section className=" snap-section hero-section">
+    <section className="snap-section hero-section">
       <div className="main-name">
         <div className="name">
           <p className="">BALATONI SZELLŐ</p>
@@ -11,7 +11,7 @@ const HeroSections = () => {
       </div>
       <div className="hero-items">
         <div className="left">
-          <p>Tiszta hajó, gondtalan vitorlázás.</p>
+          <p className="description">Tiszta hajó, gondtalan vitorlázás.</p>
           <p className="secondary-description">
             Hagyja ránk hajója tisztaságát, és többé nem kell a kosz miatt
             aggódnia!

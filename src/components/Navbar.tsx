@@ -17,8 +17,8 @@ const Navbar = () => {
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className="lucide lucide-menu"
       >
         <line x1="4" x2="20" y1="12" y2="12" />

@@ -4,7 +4,7 @@ import { Services } from "@/components/Services";
 
 export default function Home() {
   return (
-    <div className="snap-container">
+    <div className="">
       <Navbar />
       <HeroSections />
       <Services />
